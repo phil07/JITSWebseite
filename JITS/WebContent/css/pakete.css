@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+
+p{
+	text-align: left;
+	font: 16px Helvetica;;
+	color: #ffffff;
+	display: flex;
+	justify-content: left; 
+	align-items: left;
+	margin : .5rem;
+	height: 13rem; 
+	border-bottom: .2rem #ff5b5b solid;
+}
+}
