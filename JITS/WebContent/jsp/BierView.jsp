@@ -12,7 +12,7 @@
 		scope="session"></jsp:useBean>
 	<div class="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-  Bier ist ab 16. Bei Lieferung wird dein Personalausweis überprüft! <br>
+  Bier ist ab 16! Bei Lieferung wird dein Personalausweis überprüft! <br>
   <a href = "https://www.kenn-dein-limit.info/" >&#10233; Kenn dein Limit &#10232;</a>
 </div>
 <!-- HEADER -->
