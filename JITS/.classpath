@@ -24,5 +24,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/iphil/Downloads/javax.servlet-3.0.0.v201112011016-sources.jar/javax.servlet-3.0.0.v201112011016-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/iphil/Downloads/mail-1.4.7.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

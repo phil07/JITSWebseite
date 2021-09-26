@@ -24,7 +24,7 @@
 
 	<main class="main">
 		<br> <br>
-		<h2>Alkoholische Getr&aumlnke</h2><br><br>
+		<h2>Alkoholische Getränke</h2><br><br>
 		<div class= line>
 			<div><a href="AbsolitVodkaView.jsp"><img class="myLine" src="../IMG/Absolut-Vodka-07L-600x600.jpg" height="300px" width="auto"> </a>
 			<div class="myLine2">

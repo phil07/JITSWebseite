@@ -49,7 +49,7 @@
 		value="Jetzt Kaufen">
 	<input type="submit" name="weitereinkaufen"
 		value="Weiter Einkaufen">
-		<input type="submit" name="warenkorb"
+		<input type="submit" name="loeschen"
 		value="Warenkorb Loeschen" >
 
 <!-- FOOTER -->

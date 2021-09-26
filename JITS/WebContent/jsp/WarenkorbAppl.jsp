@@ -1,47 +1,47 @@
 <%@page import="java.sql.SQLException"%>
  <%@page import="jits.beans.Warenkorb" %>
+ <%@page import="jits.beans.WarenkorbBean" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>WarenkorbAppl</title>
+<title>Insert title here</title>
 </head>
 <body>
-
-		<jsp:useBean id="kb" class="jits.beans.WarenkorbBean"
+<jsp:useBean id="kb" class="jits.beans.WarenkorbBean"
 		scope="session" />
-	<%!
+		
+<%
+	WarenkorbBean warenkorb = (WarenkorbBean) session.getAttribute("warenkorb");
+if(warenkorb == null){
+	warenkorb = new WarenkorbBean();
+	session.setAttribute("warenkorb", warenkorb);
+}
+
+
+
+	String weitereinkaufen = request.getParameter("weitereinkaufen");
+	if (weitereinkaufen == null) weitereinkaufen = "";
 	
-	public String denullify(String s) {
-		if (s == null)
-			return "";
-		else
-			return s;
-	}
+	String jetztkaufen = request.getParameter("jetztkaufen");
+	if (jetztkaufen == null) jetztkaufen = "";
 	
-	
-	
-	
-	%>
-	<%
+	String loeschen = request.getParameter("loeschen");
+	if(loeschen == null) loeschen = "";
 		
 		
 		
-		String weitereinkaufen = this.denullify(request.getParameter("weitereinkaufen"));
-		String jetztkaufen = this.denullify(request.getParameter("jetztkaufen"));
-		String warenkorb = this.denullify(request.getParameter("warenkorb"));
 		
 		
 
 		if (weitereinkaufen.equals("Weiter Einkaufen")) {
 
 			response.sendRedirect("./HomeView.jsp");
-		}else if (warenkorb.equals("Warenkorb Loeschen")) {
+		}else if (loeschen.equals("Warenkorb Loeschen")) {
 		    
 			kb.deleteWarenkorb();
-			//kb.getHTMLFromAusgewaehlteWarenkorbProdukte();
 			response.sendRedirect("./WarenkorbView.jsp");
 
 		}
@@ -55,6 +55,8 @@
  
 	
 	%>
-
+		
+		
+		
 </body>
 </html>

@@ -25,7 +25,7 @@ public class WarenkorbBean {
  public WarenkorbBean() throws SQLException{
 	dbConn = new PostgreSQLAccess().getConnection();
 	this.artikelListe = new Vector<Artikel>();
-	this.getArtikelFromDB();
+//	this.getArtikelFromDB();
  }
 
  
@@ -152,19 +152,19 @@ public void deleteWarenkorb() throws SQLException {
 }
 
 
-public void getArtikelFromDB() throws SQLException{
-	String sql = "SELECT anr, aname, preis from artikel";
-	System.out.println(sql);
-	Connection dbConn = new PostgreSQLAccess().getConnection();
-	ResultSet dbResult = dbConn.createStatement().executeQuery(sql);
-	while (dbResult.next()){
-		int    anr      = dbResult.getInt("anr");
-		String aname    = dbResult.getString("aname");
-		double preis    = dbResult.getDouble("preis");
-		Artikel newArtikel = new Artikel(anr, aname, preis);
-		this.artikelListe.add(newArtikel);
-	}
-}
+//public void getArtikelFromDB() throws SQLException{
+//	String sql = "SELECT anr, aname, preis from artikel";
+//	System.out.println(sql);
+//	Connection dbConn = new PostgreSQLAccess().getConnection();
+//	ResultSet dbResult = dbConn.createStatement().executeQuery(sql);
+//	while (dbResult.next()){
+//		int    anr      = dbResult.getInt("anr");
+//		String aname    = dbResult.getString("aname");
+//		double preis    = dbResult.getDouble("preis");
+//		Artikel newArtikel = new Artikel(anr, aname, preis);
+//		this.artikelListe.add(newArtikel);
+//	}
+//}
 
 		
 	
