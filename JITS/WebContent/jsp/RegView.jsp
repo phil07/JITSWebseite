@@ -2,6 +2,7 @@
     pageEncoding="ISO-8859-1"%>
     <%@page import="jits.beans.Member" %>
     <%@page import="jits.beans.LoginBean" %>
+     <%@page import="jits.beans.MessageBean" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +17,12 @@ Member member = (Member) session.getAttribute("member");
 if (member == null){
 member = new Member();
 session.setAttribute("member", member);
+}
+
+MessageBean message = (MessageBean) session.getAttribute("message");
+if(message == null){
+	message = new MessageBean();
+	session.setAttribute("message", message);
 }
 %>
 <jsp:useBean id="sb" class="jits.beans.StartseiteBean"
@@ -33,6 +40,8 @@ session.setAttribute("member", member);
 <!-- CONTENT -->
 <form action ="..\jsp\RegAppl.jsp" method="post">
 <main>
+<h4><%=message.getInfoMessage() %></h4>
+<h4><%=message.getActionMessage() %></h4>
 <table class="registrieren">
 <tr><td><h4>Vorname: </h4></td><td><input Type ="text" name="vorname" value = "<%=member.getVorname()%>"></td>
 	<tr><td><h4>Nachname: </h4></td><td><input Type ="text" name="nachname" value = "<%=member.getNachname()%>"></td>
@@ -44,7 +53,7 @@ session.setAttribute("member", member);
 	<tr><td><h4>Email:</h4> </td><td><input Type ="text" name="email" value = "<%=member.getEmail()%>"></td></tr>
 	<tr><td><h4>Handynummer:</h4> </td><td><input Type ="text" name="handynummer" value = "<%=member.getHandynummer()%>"></td></tr>
 	<tr><td></td><td><input class="anmelden" Type ="submit" name="register" value="Registrieren"></td>
-	<tr><td></td><td><a class="anmelden" href="../jsp/LogInView.jsp"><input type="button" value="Einloggen"/></a></td>
+	<tr><td></td><td><input class="anmelden" Type ="submit" name="login" value="Einloggen"></td>
 </table>
 </form>
 <br><br><br><br><br><br>
