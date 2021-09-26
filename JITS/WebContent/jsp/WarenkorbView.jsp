@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@page import="jits.beans.Warenkorb" %>
+     <%@page import="jits.beans.WarenkorbBean" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +16,15 @@
 		scope="session"></jsp:useBean>
 		
 <body>
+<%
+WarenkorbBean warenkorb = (WarenkorbBean) session.getAttribute("warenkorb"); 
+if (warenkorb == null){
+warenkorb = new WarenkorbBean();
+session.setAttribute("warenkorb", warenkorb);
+}
 
+
+%>
 <form action="./WarenkorbAppl.jsp" method="get">
 		
 <!-- HEADER -->

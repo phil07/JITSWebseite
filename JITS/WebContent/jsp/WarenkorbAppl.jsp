@@ -39,19 +39,15 @@ if(warenkorb == null){
 		if (weitereinkaufen.equals("Weiter Einkaufen")) {
 
 			response.sendRedirect("./HomeView.jsp");
-		}else if (loeschen.equals("Warenkorb Loeschen")) {
-		    
+		}else if (loeschen.equals("Warenkorb Loeschen")) {  
 			kb.deleteWarenkorb();
 			response.sendRedirect("./WarenkorbView.jsp");
-
-		}
-		
-		else if (jetztkaufen.equals("Jetzt Kaufen")) {
-			kb.bestellen();
-			System.out.println(" Bestellung wurde aufgegeben ");
-			response.sendRedirect("./RechnungsView.jsp");
+		}else if (jetztkaufen.equals("Jetzt Kaufen")) {
+					kb.bestellen();
+					response.sendRedirect("./RechnungsView.jsp");
+			}
 			
-		} 
+	
  
 	
 	%>

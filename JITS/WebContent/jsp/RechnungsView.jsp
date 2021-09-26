@@ -29,7 +29,8 @@ session.setAttribute("member", member);
 
 <!-- CONTENT -->
 	
-<h1>Vielen Dank für Deine Bestellung</h1><br>
+<h4>Vielen Dank für Deine Bestellung.
+ Bitte halte Bargeld bei der Lieferung bereit!</h4><br>
 <a href="../jsp/HomeView.jsp"><input type="button" value="Zurück zur Webseite" /></a>
 
 <!-- FOOTER -->
