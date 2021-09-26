@@ -36,7 +36,7 @@
 			</ul>
 			</div>
 			
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p>Inhalt: <br><br>
 		1x Malibu Carribean Rum mit Kokusnusslikör 0,7L (21% vol.)	<br>
 		1x Baileys Original Irish Cream Likör 0,7L (17% vol.)	<br>

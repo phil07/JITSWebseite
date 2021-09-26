@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 		
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p> 
 		Three Sixty Vodka ist geschmackvolle Exklusivität.<br>
 		Aus 100 Prozent reinem, deutschen Weizen und im aufwändigen Herstellungsverfahren veredelt.<br>

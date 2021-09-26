@@ -35,7 +35,7 @@
 					</div>
 			</ul>
 			</div>
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p>Inhalt: <br><br>
 		2x Jack Daniel´s 0,7L (40% vol.)<br>
 		3x Coca Cola 1L<br>

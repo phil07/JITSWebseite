@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p> 
 		SKYY Vodka: Willkommen unter dem blauen Himmel Kaliforniens.<br>
 		SKYY Vodka wurde als vierfach destillierte und dreifach gefilterte Premiumspirituose entwickelt, 

@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 	
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p>
 		Baileys Original Irish Cream ist ein unverschämt köstliches Vergnügen,
 		das feinsten irischen Whiskey, erlesene Spirituosen, frische irische Sahne,

@@ -35,7 +35,7 @@
 					</div>
 			</ul>
 			</div>
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p>Inhalt: <br><br>
 		1x Coca Cola 1L<br>
 		1x Fanta 1L<br>

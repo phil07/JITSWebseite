@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 	
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p> <br>
 		Absolut Vodka wurde 1979 in New York lanciert.
 		Bald sprach die ganze Stadt davon, dann die USA und schlieﬂlich die ganze Welt. <br>

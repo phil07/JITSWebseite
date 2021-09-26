@@ -18,7 +18,7 @@
 <br> <br>
 	<main class="main">
 			<div class="content">
-			<h2>Captain Morgen</h2> <br> <br>
+			<h2>Captain Morgan</h2> <br> <br>
 			<ul class="produkte">
 				<li>
 					<div class="produkt">
@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 	
-		<h4 class="beschreibung">Beschreibeung</h4><br>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p> Vor all den Jahren war es trockene Arbeit für den Captain auf den sieben Meeren: 
 		Er und seine bunte Truppe verwegener Freibeuter schufen die Galionsfigur der Flotte des Captains und der Original Spiced Gold war geboren. <br>
 		Seitdem haben der Captain und seine Crew nie wieder zurückgeschaut. <br>

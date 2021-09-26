@@ -6,9 +6,10 @@
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="../css/index.css">
 <script type="text/javascript" src="../js/Home.js"></script>
-<title>JITS Nachtlieferservice</title>  
+<title>JITS Nachtlieferservice</title>
+
 </head>
-<body onload="carousel2()">
+<body>
 <jsp:useBean id="sb" class="jits.beans.StartseiteBean"
 		scope="session"></jsp:useBean>
 		
@@ -91,18 +92,18 @@
 </main> 
  
 	
-		<script>
+			<script>
 			var myIndex = 0;
 			carousel1();
-
 			function carousel1() {
 				var i;
 				var x = document.getElementsByClassName("mySlides");
 				for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
+					x[i].style.display = "none";
 				}
 				myIndex++;
 				if (myIndex > x.length) {
+					myIndex = 1
 				}
 				x[myIndex - 1].style.display = "block";
 				setTimeout(carousel1, 5000);
@@ -111,7 +112,6 @@
 		<script>
 			var a = 0;
 			carousel2();
-
 			function carousel2() {
 				var j;
 				var y = document.getElementsByClassName("mySlides2");
@@ -121,10 +121,10 @@
 				a++;
 				if (a > y.length) {
 					a = 1
-			}
+				}
 				y[a - 1].style.display = "block";
 				setTimeout(carousel2, 5000);
-		}
+			}
 		</script>
 
 

@@ -34,7 +34,7 @@
 			</ul>
 			</div>
 			
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p> 
 		Der Bombay Sapphire London Dry Gin ist ein Produkt der gleichnamigen Destillerie, 
 		die Rezeptur geht auf ein Original aus dem Jahr 1761 zurück, das in dem britischen Unternehmen von Generation zu Generation weitergegeben wird.<br>

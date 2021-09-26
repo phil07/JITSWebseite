@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 		
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p> 
 		 GORDONS London Dry Gin ist weltweiter Marktführer im Gin Segment und auch in Deutschland die
 		 Nr. 1. Gin Liebhaber in aller Welt charakterisieren GORDONS London Dry Gin als leicht, raffiniert und wunderbar erfrischend.<br>

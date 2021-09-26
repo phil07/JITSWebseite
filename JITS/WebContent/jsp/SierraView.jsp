@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 			
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p> 
 		Sierra Tequila Silver ist ein geruhter, klarer Tequila. Sein volles, fruchtiges, 
 		frisches und von leichter Chilinote dominiertes Aroma spiegelt sowohl die Tequilana Weber Azul Agave wieder, 

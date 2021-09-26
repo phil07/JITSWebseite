@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 	
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p> 
 		Jedes Meisterwerk besteht zu gleichen Teilen aus Präzision und Inspiration. Jägermeister ist da keine Ausnahme.<br><br>
 		Unser eiskalter Shot, der 56 Kräuter ausgewogen vereint, war schon immer der Drink von denen, die neue Wege gehen.

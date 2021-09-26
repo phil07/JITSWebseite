@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p> 
 		 Der Gorbatschow Wodka ist eine der bekanntesten und beliebtesten Wodka-Sorten Deutschlands.<br>
   		 Seine Wurzeln liegen jedoch in Russland. Schon vor dem Ersten Weltkrieg begann die Familie Gorbatschow mit der Wodka-Herstellung.<br>

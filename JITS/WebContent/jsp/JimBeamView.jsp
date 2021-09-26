@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 			
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p>
 		Die Destillerie Jim Beam hat ihren Sitz in Clermont, Kentucky, und wurde im Jahr 1795 von dem deutschstämmigen Johannes Jakob Böhm gegründet,
 		der seinen Namen später auf Jacob Beam änderte. <br>

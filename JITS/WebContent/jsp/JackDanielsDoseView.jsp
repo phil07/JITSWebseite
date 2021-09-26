@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 	
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p>
 		Jack Daniels Cola Tennessee Whiskey Mixgetränk Jacky Cola 330ml 
 		</p>

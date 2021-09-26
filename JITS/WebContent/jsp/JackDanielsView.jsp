@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p> 
 		Der heute weltbekannte Whiskey wird seit 1866 in der Jack Daniels Destillerie, der ältesten eingetragenen Destillerie Nordamerikas,
 		nach dem unveränderten Originalrezept von Mr. Jack Daniel hergestellt.<br> 

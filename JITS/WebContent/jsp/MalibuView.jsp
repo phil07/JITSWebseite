@@ -33,7 +33,7 @@
 			</ul>
 			</div>
 
-		<h4 class="beschreibung">Beschreibeung</h4>
+		<h4 class="beschreibung">Beschreibung</h4>
 		<p> 
 		Seit mehr als 350 Jahren wird auf der karibischen Insel Barbados in der West Indies Rum Distillery ein Rum hergestellt,
 		der sich durch seine besondere Finesse auszeichnet.<br>
