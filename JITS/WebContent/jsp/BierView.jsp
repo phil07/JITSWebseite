@@ -29,7 +29,7 @@
 				<a>Beck´s Pils 0,33L</a>
 			<div class="produkt-marke">Bier</div>
 					<div class="produkt-preis">1,70 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Becks" data-price="1.70" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 					
@@ -38,7 +38,7 @@
 					<a>Corona Extra 0,33L</a>
 			<div class="produkt-marke">Bier</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Corona" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -47,7 +47,7 @@
 					<a>Ureich Premium Pils 0,33L</a>
 			<div class="produkt-marke">Bier</div>
 					<div class="produkt-preis">1,70 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Ureich" data-price="1.70" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				</div>	<br><br>	<br><br>	<br><br>

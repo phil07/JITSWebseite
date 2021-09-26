@@ -30,7 +30,7 @@
 				<span class="shop-ite-title"><a href="Paket1View.jsp">Mädelsabend</a></span> 
 			<div class="produkt-marke">Pakete</div>
 					<div class="produkt-preis">48,00 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Paket1" data-price="48.00" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 					
@@ -39,7 +39,7 @@
 					<span class="shop-ite-title"><a href="Paket2View.jsp">Männerabend</a></span>
 			<div class="produkt-marke">Pakete</div>
 					<div class="produkt-preis">61,00 Euro</div>
-					 <input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Paket2" data-price="61.00" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -48,7 +48,7 @@
 					<span class="shop-ite-title"><a href="Paket3View.jsp">Netflix &amp Chill</a></span>
 			<div class="produkt-marke">Pakete</div>
 					<div class="produkt-preis">15,00 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Paket3" data-price="61.00" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -57,7 +57,7 @@
 					<span class="shop-ite-title"><a href="Paket4View.jsp">Partypaket</a></span>
 			<div class="produkt-marke">Pakete</div>
 					<div class="produkt-preis">96,00 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Paket4" data-price="96.00" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 		</div>

@@ -25,7 +25,7 @@
 				<a>Coca-Cola 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Cola" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 					
@@ -34,7 +34,7 @@
 					<a>Coca-Cola light 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Colalight" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -43,7 +43,7 @@
 					<a>Mezzo Mix 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="MezzoMix" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 					
@@ -52,7 +52,7 @@
 					<a>Fanta 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Fanta" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div> 
 				</div>
@@ -63,7 +63,7 @@
 					<a>Sprite 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Sprite" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -72,7 +72,7 @@
 					<a>Red Bull 0,25L </a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,75 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="RedBull" data-price="2.75" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 			
@@ -81,7 +81,7 @@
 					<a>28 Black Acai 0,25L   </a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,80 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="28Black" data-price="2.80" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -90,7 +90,7 @@
 					<a>Maracuja-Nektar 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">3,50 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Maracuja" data-price="3.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 			</div>
@@ -101,7 +101,7 @@
 					<a>Albi - Kirschnektar 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">3,50 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Kirsche" data-price="3.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 			
@@ -110,7 +110,7 @@
 					<a>Albi - Orangensaft 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">3,50 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Orangensaft" data-price="3.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 			</div>

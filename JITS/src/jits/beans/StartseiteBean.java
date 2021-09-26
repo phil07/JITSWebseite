@@ -7,6 +7,8 @@ public class StartseiteBean {
 
 	// kopfzeile als Html
 	
+
+	
 	public String getHeaderAsHtml() {
 		String header = "";
 		
@@ -41,7 +43,8 @@ public class StartseiteBean {
 				+"	</div>\n" 
 				+" <div class=\"header-links\">\n"
 				+" 	<a href=\"../jsp/WarenkorbView.jsp\">Warenkorb</a>\n"
-				+" <a href=\"../jsp/LogInView.jsp\">Sign In</a>\n"
+				+" <a href=\"../jsp/LogInView.jsp\">Sign In</a>"
+				+ "</div> "
 				+"	</div>\n" 
 				+ "</header>";
 		

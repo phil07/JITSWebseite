@@ -24,7 +24,7 @@
 				<a>Funny-frisch Chipsfrisch - Ungarisch</a>
 			<div class="produkt-marke">Snacks</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Chips" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 					
@@ -33,7 +33,7 @@
 					<a>Snack-Mix</a>
 			<div class="produkt-marke">Snacks</div>
 					<div class="produkt-preis">3,00 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Snacks" data-price="3.00" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -42,7 +42,7 @@
 					<a>Mikrowellen-Popcorn salzig</a>
 			<div class="produkt-marke">Snacks</div>
 					<div class="produkt-preis">1,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Popcornsalzig" data-price="1.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				</div> 
@@ -53,7 +53,7 @@
 					<a>Mikrowellen-Popcorn süß</a>
 			<div class="produkt-marke">Snacks</div>
 					<div class="produkt-preis">1,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Popcornsues" data-price="1.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div> 
 			
@@ -62,7 +62,7 @@
 					<a>Haribo Goldbären</a>
 			<div class="produkt-marke">Snacks</div>
 					<div class="produkt-preis">1,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Goldbaeren" data-price="1.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -71,7 +71,7 @@
 					<a>Haribo Schlümpfe </a>
 			<div class="produkt-marke">Snacks</div>
 					<div class="produkt-preis">1,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Schluempfe" data-price="1.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 			</div>
@@ -83,7 +83,7 @@
 					<a>Milka - Alpenmilchcreme </a>
 			<div class="produkt-marke">Snacks</div>
 					<div class="produkt-preis">1,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Alpenmilchcreme" data-price="1.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -92,7 +92,7 @@
 					<a>Milka - Ganze Haselnüsse  </a>
 			<div class="produkt-marke">Snacks</div>
 					<div class="produkt-preis">1,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Haselnuesse" data-price="1.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -101,7 +101,7 @@
 					<a>NicNac´s 125g </a>
 			<div class="produkt-marke">Snacks</div>
 					<div class="produkt-preis">2,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="NicNac" data-price="2.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 			</div>

@@ -31,7 +31,7 @@
 				<a href="AbsolitVodkaView.jsp">Absolut Vodka 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">21,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					 <a href="#" data-name="Absolut" data-price="21.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 					
@@ -40,7 +40,7 @@
 					<a href="BaileysView.jsp">Baileys - Original 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">17,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="Baileys" data-price="17.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -49,7 +49,7 @@
 					<a href="BombayView.jsp">Bombay Sapphire 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">27,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="Bombay" data-price="27.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -58,7 +58,7 @@
 					<a href="CaptainMorgenView.jsp">Captain Morgen 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">17,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="Captain" data-price="17.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div> 
 		</div>
@@ -69,7 +69,7 @@
 					<a href="GorbatschowView.jsp">Gorbatschow 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">14,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="Gorbatschow" data-price="14.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div></div>
 				
 				
@@ -78,7 +78,7 @@
 					<a href="GordonView.jsp">Gordon´s 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">18,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="Gordons" data-price="18.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -87,7 +87,7 @@
 					<a href="JackDanielsView.jsp">Jack Daniel´s 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">24,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="Jacky" data-price="24.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 			
@@ -96,7 +96,7 @@
 					<a href="ThreeSixtyView.jsp">Three Sixty 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">21,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="Sixty" data-price="21.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 			</div>
@@ -108,7 +108,7 @@
 					<a href="JaegermeisterView.jsp">Jägermeister 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">21,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="Jaegermeister" data-price="21.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -117,7 +117,7 @@
 					<a href="JimBeamView.jsp">Jim Beam 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">19,99 Euro</div>
-				<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+				<a href="#" data-name="Beam" data-price="19.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -126,7 +126,7 @@
 					<a href="MalibuView.jsp">Malibu 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">16,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="Malibu" data-price="16.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 		
@@ -135,7 +135,7 @@
 					<a href="SierraView.jsp">Sierra Tequila Silver 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">18,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="Sierra" data-price="18.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 			</div>
@@ -147,7 +147,7 @@
 					<a href="SkyyView.jsp">Skyy Vodka 0,7L</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">23,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="Skyy" data-price="23.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 				
@@ -157,7 +157,7 @@
 					<a href="JackDanielsDoseView.jsp">Jack Daniel´s Cola - Mixgetränk</a>
 			<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">4,99 Euro</div>
-					<input class="button" Type ="submit" name="cart" value="in den Warenkorb">
+					<a href="#" data-name="JackCola" data-price="4.99" class="add-to-cart btn btn-primary">in den Warenkorb</a>
 				</div>
 				</div>
 			</div>
