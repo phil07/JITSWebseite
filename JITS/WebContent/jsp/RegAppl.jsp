@@ -21,9 +21,6 @@ session.setAttribute("member", member);
 	 message = new MessageBean();
 	 session.setAttribute("message", message);
  }
-
-
-
 String vorname = request.getParameter("vorname");
 String nachname = request.getParameter("nachname");
 String stadt = request.getParameter("stadt");
@@ -39,9 +36,6 @@ String login = request.getParameter("login");
 if(login == null) login = "";
 String comeFrom = request.getParameter("comeFrom");
 if(comeFrom == null) comeFrom = "";
-
-
-
 if(register.equals("Registrieren")){
 	member.setVorname(vorname);
 	member.setNachname(nachname);

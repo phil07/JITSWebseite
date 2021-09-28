@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+     <%@page import ="jits.beans.MessageBean" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +9,18 @@
 <title>Softdrinks</title>
 </head>
 <body>
+
+<jsp:useBean id="message" class="jits.beans.MessageBean" scope="session" />
+
 <jsp:useBean id="sb" class="jits.beans.StartseiteBean"
 		scope="session"></jsp:useBean>
 <!-- HEADER -->
 <jsp:getProperty property="headerAsHtml" name="sb" />
+<a href="../jsp/LogInView.jsp"><%=message.getHeaderMessage() %></a>
+ </div>
+ </div>
+ </header>
+
 
 
 <!-- CONTENT -->

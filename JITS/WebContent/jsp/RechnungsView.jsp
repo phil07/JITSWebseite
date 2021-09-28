@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
      <%@page import="jits.beans.Member" %>
+      <%@page import ="jits.beans.MessageBean" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,6 +27,14 @@ session.setAttribute("member", member);
 
 <!-- HEADER -->
 <jsp:getProperty property="headerAsHtml" name="sb" />
+<jsp:useBean id="message" class="jits.beans.MessageBean"
+		scope="session"></jsp:useBean>
+
+<a href="../jsp/LogInView.jsp"><%=message.getHeaderMessage() %></a>
+ </div>
+ </div>
+ </header>
+
 
 <!-- CONTENT -->
 	

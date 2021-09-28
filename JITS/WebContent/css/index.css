@@ -69,13 +69,50 @@ h4{
     0 0 30px #ff80c0;			
 }
 
+.homeseiter{
+	text-align: center;
+	font: 16px Helvetica;;
+	color: #ffffff;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	margin : 1rem;
+	height: 10rem; 
+	
+}
 
+.überschrift{
+	color: #ffffff;
+	font: 25px Helvetica;;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	margin : .5rem;
+	height: 3rem; 
+	text-shadow:
+    0 0 10px #ff0000,
+    0 0 20px #ff0000,	
+}
 .beschreibung{
 	display: flex;
 	justify-content: left; 
 	align-items: left;
 	margin : .5rem;
 	height: 5rem; 
+	background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+    text-shadow:
+    0 0 10px #ff80c0,
+    0 0 20px #ff80c0,
+    0 0 30px #ff80c0;			
+}
+
+.beschreibung1{
+	display: flex;
+	justify-content: left; 
+	align-items: left;
+	margin : .5rem;
+	height: 2rem; 
 	background: none repeat scroll 0 0 #000000;
     color: #FFFFFF;
     text-shadow:
@@ -380,7 +417,7 @@ nav ul li {
 	padding-right: 20px;
 }
 
-.registreiren{
+.registrieren{
 	margin: 20px auto;
 	height: auto;
 	text-align: center;

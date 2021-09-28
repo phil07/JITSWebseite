@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@page import ="jits.beans.MessageBean" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,12 +10,23 @@
 <title>Paket2 | Männerabend</title>
 </head>
 <body>
+<% 
+MessageBean message = (MessageBean) session.getAttribute("message");
+if (message == null) {
+	message = new MessageBean();
+	session.setAttribute("message", message);
+}
+%>
 <jsp:useBean id="sb" class="jits.beans.StartseiteBean"
 		scope="session"></jsp:useBean>
 	
 	<!-- HEADER -->
 		<!-- HEADER -->
 <jsp:getProperty property="headerAsHtml" name="sb" />
+<a href="../jsp/LogInView.jsp"><%=message.getHeaderMessage() %></a>
+ </div>
+ </div>
+ </header>
 
 	<!-- CONTENT -->
 		

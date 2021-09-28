@@ -2,7 +2,10 @@ package jits.beans;
 
 public class StartseiteBean {
 
+	MessageBean message;
+
 	public StartseiteBean() {
+		
 	}
 
 	// kopfzeile als Html
@@ -11,7 +14,6 @@ public class StartseiteBean {
 	
 	public String getHeaderAsHtml() {
 		String header = "";
-		
 		header += "<header class=\"header\">\n"
 				+" <div class=\"brand\">\n"
 				+"<input type='button' class='button1' value='&#9776' onclick='dropDown()'/>\n"
@@ -42,16 +44,12 @@ public class StartseiteBean {
 				+"<main class='main'><a href=\"../jsp/HomeView.jsp\"><img class='logo-image' src='../IMG/JITSLOGO.png' alt ='logo'/></a>\n" 
 				+"	</div>\n" 
 				+" <div class=\"header-links\">\n"
-				+" 	<a href=\"../jsp/WarenkorbView.jsp\">Warenkorb</a>\n"
-				+" <a href=\"../jsp/LogInView.jsp\">Sign In</a>"
-				+ "</div> "
-				+"	</div>\n" 
-				+ "</header>";
-		
-
-			
+				+" 	<a href=\"../jsp/WarenkorbView.jsp\">Warenkorb</a>\n";		
 		return header;
 	}
+	
+	
+	
 	
 	//	header += "<header>\n"
 	//		 += "<aside class=\"seitenliste\">\n"

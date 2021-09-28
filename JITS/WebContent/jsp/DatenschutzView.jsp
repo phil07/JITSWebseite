@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+     <%@page import ="jits.beans.MessageBean" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +13,14 @@
 		scope="session"></jsp:useBean>
 <!-- HEADER -->
 <jsp:getProperty property="headerAsHtml" name="sb" />
+<jsp:useBean id="message" class="jits.beans.MessageBean"
+		scope="session"></jsp:useBean>
+
+<a href="../jsp/LogInView.jsp"><%=message.getHeaderMessage() %></a>
+ </div>
+ </div>
+ </header>
+
 
 <!-- CONTENT -->
 <div>
@@ -24,7 +33,7 @@
 					des Bundesdatenschutzgesetzes und des rheinland-pfälzischen
 					Landesdatenschutzgesetzes sowie sonstiger datenschutzrechtlicher
 					Bestimmungen ist Philipp Fischer und Albulena Sejdijaj <br>E-Mail:
-					datenschutz@jits.de  
+					datenschutz@jits.de  
 				</p>
 			</div>
 			<p class="title2">II. Kontaktdaten der/des

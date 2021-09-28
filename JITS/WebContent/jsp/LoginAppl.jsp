@@ -12,17 +12,14 @@
 </head>
 <body>
 	<jsp:useBean id="lb" class="jits.beans.LoginBean" scope="session" />
+	<jsp:useBean id="message" class="jits.beans.MessageBean" scope="session" />
 	<%
 	Member member = (Member) session.getAttribute("member");
 	if (member == null) {
 		member = new Member();
 		session.setAttribute("member", member);
 	}
-	MessageBean message = (MessageBean) session.getAttribute("message");
-	if (message == null) {
-		message = new MessageBean();
-		session.setAttribute("message", message);
-	}
+	
 
 	String passwort = request.getParameter("passwort");
 	String email = request.getParameter("email");
@@ -47,6 +44,7 @@
 			if (loginOk) {
 		lb.setLoggedIn(true);
 		message.setLoginSuccessful();
+		message.setLoggedIn();
 		response.sendRedirect("../jsp/HomeView.jsp?comeFrom=LoginAppl");
 			} else {
 		lb.setLoggedIn(false);
@@ -73,6 +71,7 @@
 			lb.deleteAccount();
 			lb.setLoggedIn(false);
 			message.setAccountGeloescht(email);
+			message.setNotLoggedIn();
 			response.sendRedirect("../jsp/RegView.jsp");
 		}else {
 		message.setLoginWelcome();

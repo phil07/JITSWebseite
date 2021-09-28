@@ -3,10 +3,12 @@ package jits.beans;
 public class MessageBean {
  String infoMessage;
  String actionMessage;
+ String HeaderMessage;
  
  
  public MessageBean(){
 	 this.setRegistrierungWelcome();
+	 this.setNotLoggedIn();
  }
  public void setRegistrationSuccessful(String email) {
 	 this.infoMessage = "Email " + email + " wurde erfolgreich registriert";
@@ -33,7 +35,7 @@ public class MessageBean {
 	 this.actionMessage = "Bitte melde dich an";
  }
  public void setLoginSuccessful() {
-	 this.infoMessage = "Willkommen bei JITS";
+	 this.infoMessage = "Du bist bei JITS nun angemeldet";
 	 this.actionMessage = "Schau dir unsere Angebote an";
  }
  
@@ -46,6 +48,12 @@ public class MessageBean {
 	 this.actionMessage = "Danke, dass du unser Kunde warst";
  }
  
+ public void setNotLoggedIn() {
+	 this.HeaderMessage = "Einloggen";
+ }
+ public void setLoggedIn() {
+	 this.HeaderMessage  = "Eingeloggt";
+ }
  
  
  
@@ -61,7 +69,13 @@ public String getActionMessage() {
 public void setActionMessage(String actionMessage) {
 	this.actionMessage = actionMessage;
 }
- 
+
+public String getHeaderMessage() {
+	return HeaderMessage;
+}
+public void setHeaderMessage(String headerMessage) {
+	this.HeaderMessage = headerMessage;
+}
  
  
 }
