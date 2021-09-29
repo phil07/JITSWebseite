@@ -46,8 +46,6 @@
 		lb.setLoggedIn(true);
 		message.setLoginSuccessful();
 		message.setLoggedIn();
-		warenkorb.deleteWarenkorb(lb.getEmail());
-		warenkorb.createWarenkorbTable(lb.getEmail());
 		response.sendRedirect("../jsp/HomeView.jsp?comeFrom=LoginAppl");
 			} else {
 		lb.setLoggedIn(false);
@@ -73,6 +71,7 @@
 		if (passwortOK) {
 			lb.deleteAccount();
 			lb.setLoggedIn(false);
+			warenkorb.deleteWarenkorb(lb.getEmail());
 			message.setAccountGeloescht(email);
 			message.setNotLoggedIn();
 			response.sendRedirect("../jsp/RegView.jsp");

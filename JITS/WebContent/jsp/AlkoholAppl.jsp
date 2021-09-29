@@ -115,7 +115,7 @@
 	response.sendRedirect("./AlkoholView.jsp");
 }
 	else if (sierra.equals("in den Warenkorb")) {
-	warenkorb.insertArtikel(29, lb.getEmail());
+	warenkorb.insertArtikel(23, lb.getEmail());
 	response.sendRedirect("./AlkoholView.jsp");
 }
 	else if (skyy.equals("in den Warenkorb")) {
