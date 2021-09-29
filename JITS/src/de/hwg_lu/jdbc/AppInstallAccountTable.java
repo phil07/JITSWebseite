@@ -49,7 +49,6 @@ public class AppInstallAccountTable {
 		 sql = "create table benutzer ("
 		 		+ "vorname VARCHAR(20) NOT NULL, "
 				+ "nachname VARCHAR(20) NOT NULL, "
-				+ "admin CHAR(1) NOT NULL DEFAULT 'N', "
 				+ "stadt VARCHAR(50) NOT NULL, "
 				+ "strasse VARCHAR(50) NOT NULL, "
 				+ "nr varchar(256) NOT NULL, "
@@ -70,9 +69,9 @@ public class AppInstallAccountTable {
 
 	public void insertFirstUser() throws SQLException{
 		String sql = "INSERT INTO benutzer " +
-			"(VORNAME, NACHNAME, ADMIN, STADT, STRASSE, NR, ALTER, PASSWORT, EMAIL, TELEFONNUMMER) " +
+			"(VORNAME, NACHNAME, STADT, STRASSE, NR, ALTER, PASSWORT, EMAIL, TELEFONNUMMER) " +
 			"VALUES " +
-			"('Test', 'Test', 'N', 'Biblis', 'DieStrasse', '1', '21', 'passwort', 'email@email.com', '0176/91397119')";
+			"('Test', 'Test', 'Biblis', 'DieStrasse', '1', '21', 'passwort', 'email@email.com', '0176/91397119')";
 		System.out.println(sql);
 		Statement myStat = dbConn.createStatement();
 		myStat.executeUpdate(sql);
@@ -80,7 +79,7 @@ public class AppInstallAccountTable {
 
 	public void insertSecondUser() throws SQLException{
 		String sql = "INSERT INTO benutzer " +
-			"(VORNAME, NACHNAME, ADMIN, STADT, STRASSE, NR, ALTER, PASSWORT, EMAIL, TELEFONNUMMER) " +
+			"(VORNAME, NACHNAME, STADT, STRASSE, NR, ALTER, PASSWORT, EMAIL, TELEFONNUMMER) " +
 			"VALUES " +
 			"('Testzwei', 'Testzwei', 'Y', 'Bensheim', 'EineStrasse', '164a', '15', 'passwort', 'email2@email.com', '0176/12345678')";
 		System.out.println(sql);
@@ -91,14 +90,13 @@ public class AppInstallAccountTable {
 	
 
 	public void showAccountData() throws SQLException{
-		String sql = " SELECT VORNAME, NACHNAME, ADMIN, STADT, STRASSE, NR, ALTER, PASSWORT, EMAIL, TELEFONNUMMER " +
+		String sql = " SELECT VORNAME, NACHNAME, STADT, STRASSE, NR, ALTER, PASSWORT, EMAIL, TELEFONNUMMER " +
 			"FROM benutzer ";
 		System.out.println(sql);
 		ResultSet dbRes = dbConn.createStatement().executeQuery(sql);
 		while (dbRes.next()){
 			String vorname   = dbRes.getString("VORNAME");
 			String nachname = dbRes.getString("NACHNAME");
-			String admin   = dbRes.getString("ADMIN");
 			String stadt    = dbRes.getString("STADT");
 			String strasse = dbRes.getString("STRASSE");
 			String nr    = dbRes.getString("NR");
@@ -108,7 +106,6 @@ public class AppInstallAccountTable {
 			String telefonnummer = dbRes.getString("TELEFONNUMMER");
 			String outString = vorname + ", ";
 			outString += nachname + ", ";
-			outString += admin + ", ";
 			outString += stadt + ", ";
 			outString += strasse + ", ";
 			outString += nr + ", ";
