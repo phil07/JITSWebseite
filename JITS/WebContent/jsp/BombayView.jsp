@@ -38,7 +38,7 @@
 					</div>
 					<div class="produkt-marke">Alkohol</div>
 					<div class="produkt-preis">27,99 Euro</div>
-					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+			
 					</div>
 			</ul>
 			</div>

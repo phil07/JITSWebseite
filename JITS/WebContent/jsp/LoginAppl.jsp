@@ -13,6 +13,7 @@
 <body>
 	<jsp:useBean id="lb" class="jits.beans.LoginBean" scope="session" />
 	<jsp:useBean id="message" class="jits.beans.MessageBean" scope="session" />
+	<jsp:useBean id="warenkorb" class="jits.beans.WarenkorbBean" scope="session" />
 	<%
 	Member member = (Member) session.getAttribute("member");
 	if (member == null) {
@@ -45,6 +46,8 @@
 		lb.setLoggedIn(true);
 		message.setLoginSuccessful();
 		message.setLoggedIn();
+		warenkorb.deleteWarenkorb(lb.getEmail());
+		warenkorb.createWarenkorbTable(lb.getEmail());
 		response.sendRedirect("../jsp/HomeView.jsp?comeFrom=LoginAppl");
 			} else {
 		lb.setLoggedIn(false);

@@ -10,6 +10,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+<jsp:useBean id="warenkorb" class="jits.beans.WarenkorbBean" scope="session" />
+<jsp:useBean id="lb" class="jits.beans.LoginBean" scope="session" />
 <%
 Member member = (Member) session.getAttribute("member");
 if(member == null){
@@ -48,8 +50,13 @@ if(register.equals("Registrieren")){
 	member.setHandynummer(handynummer);
 	try{
 		boolean userAngelegt = member.insertMemberIfNotExist();
-		if(userAngelegt) message.setRegistrationSuccessful(email);
-		else message.setUserAlreadyExists(email);
+		if(userAngelegt){
+			message.setRegistrationSuccessful(email);
+			warenkorb.createWarenkorbTable(lb.getEmail());
+		}
+		else {
+			message.setUserAlreadyExists(email);
+		}
 	}catch(SQLException se){
 		se.printStackTrace();
 		message.setAnyError();

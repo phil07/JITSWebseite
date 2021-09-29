@@ -28,7 +28,7 @@
 
 
 <!-- CONTENT -->
-
+<form action ="..\jsp\BierAppl.jsp" method="post">
 	<main class="main">
 		<br> <br>
 		<h2>Bier</h2><br><br>	<br><br>
@@ -38,7 +38,7 @@
 				<a>Beck´s Pils 0,33L</a>
 			<div class="produkt-marke">Bier</div>
 					<div class="produkt-preis">1,70 Euro</div>
-					 <a href="#" data-name="Becks" data-price="1.70" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					 <input Type ="submit" name="becks" value="in den Warenkorb">
 				</div>
 				</div>
 					
@@ -47,7 +47,7 @@
 					<a>Corona Extra 0,33L</a>
 			<div class="produkt-marke">Bier</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					 <a href="#" data-name="Corona" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					 <input Type ="submit" name="corona" value="in den Warenkorb">
 				</div>
 				</div>
 				
@@ -56,7 +56,7 @@
 					<a>Ureich Premium Pils 0,33L</a>
 			<div class="produkt-marke">Bier</div>
 					<div class="produkt-preis">1,70 Euro</div>
-					 <a href="#" data-name="Ureich" data-price="1.70" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					<input Type ="submit" name="ureich" value="in den Warenkorb">
 				</div>
 				</div>
 				</div>	<br><br>	<br><br>	<br><br>
@@ -82,7 +82,7 @@
 			</div>
 		</div>
 	</main>
-
+</form>
 <!-- FOOTER -->
 		<jsp:getProperty property="startFooterAsHtml" name="sb" />
 </body>

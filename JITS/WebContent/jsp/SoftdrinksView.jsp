@@ -24,7 +24,7 @@
 
 
 <!-- CONTENT -->
-
+<form action ="..\jsp\SoftdrinksAppl.jsp" method="post">
 <main class="main">
 		<br> <br>
 		<h2>Softdrinks</h2><br><br>
@@ -34,7 +34,7 @@
 				<a>Coca-Cola 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					 <a href="#" data-name="Cola" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					  <input Type ="submit" name="cola" value="in den Warenkorb">
 				</div>
 				</div>
 					
@@ -43,7 +43,7 @@
 					<a>Coca-Cola light 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					 <a href="#" data-name="Colalight" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					 <input Type ="submit" name="light" value="in den Warenkorb">
 				</div>
 				</div>
 				
@@ -52,7 +52,7 @@
 					<a>Mezzo Mix 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					 <a href="#" data-name="MezzoMix" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					  <input Type ="submit" name="mezzo" value="in den Warenkorb">
 				</div>
 				</div>
 					
@@ -61,7 +61,7 @@
 					<a>Fanta 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					 <a href="#" data-name="Fanta" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					  <input Type ="submit" name="fanta" value="in den Warenkorb">
 				</div>
 				</div> 
 				</div>
@@ -72,7 +72,7 @@
 					<a>Sprite 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,50 Euro</div>
-					 <a href="#" data-name="Sprite" data-price="2.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					  <input Type ="submit" name="sprite" value="in den Warenkorb">
 				</div>
 				</div>
 				
@@ -81,7 +81,7 @@
 					<a>Red Bull 0,25L </a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,75 Euro</div>
-					 <a href="#" data-name="RedBull" data-price="2.75" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					  <input Type ="submit" name="red" value="in den Warenkorb">
 				</div>
 				</div>
 			
@@ -90,7 +90,7 @@
 					<a>28 Black Acai 0,25L   </a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">2,80 Euro</div>
-					 <a href="#" data-name="28Black" data-price="2.80" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					  <input Type ="submit" name="black" value="in den Warenkorb">
 				</div>
 				</div>
 				
@@ -99,7 +99,7 @@
 					<a>Maracuja-Nektar 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">3,50 Euro</div>
-					 <a href="#" data-name="Maracuja" data-price="3.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					  <input Type ="submit" name="maracuja" value="in den Warenkorb">
 				</div>
 				</div>
 			</div>
@@ -110,7 +110,7 @@
 					<a>Albi - Kirschnektar 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">3,50 Euro</div>
-					 <a href="#" data-name="Kirsche" data-price="3.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					 <input Type ="submit" name="kirsche" value="in den Warenkorb">
 				</div>
 				</div>
 			
@@ -119,13 +119,13 @@
 					<a>Albi - Orangensaft 1L</a>
 			<div class="produkt-marke">Softdrinks</div>
 					<div class="produkt-preis">3,50 Euro</div>
-					 <a href="#" data-name="Orangensaft" data-price="3.50" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					  <input Type ="submit" name="orange" value="in den Warenkorb">
 				</div>
 				</div>
 			</div>
 		
 	</main>
-	
+	</form>
 <!-- FOOTER -->
 		<jsp:getProperty property="startFooterAsHtml" name="sb" />
 </body>

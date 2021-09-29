@@ -11,16 +11,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:useBean id="kb" class="jits.beans.WarenkorbBean"
+<jsp:useBean id="warenkorb" class="jits.beans.WarenkorbBean"
 		scope="session" />
 		
 		<jsp:useBean id="lb" class="jits.beans.LoginBean" scope="session" />
 <%
-	WarenkorbBean warenkorb = (WarenkorbBean) session.getAttribute("warenkorb");
-if(warenkorb == null){
-	warenkorb = new WarenkorbBean();
-	session.setAttribute("warenkorb", warenkorb);
-}
 
 	String weitereinkaufen = request.getParameter("weitereinkaufen");
 	if (weitereinkaufen == null) weitereinkaufen = "";
@@ -38,11 +33,12 @@ if(warenkorb == null){
 		if (weitereinkaufen.equals("Weiter Einkaufen")) {
 			response.sendRedirect("./HomeView.jsp");
 		}else if (loeschen.equals("Warenkorb Loeschen")) {  
-			kb.deleteWarenkorb();
+			warenkorb.deleteWarenkorb(lb.getEmail());
 			response.sendRedirect("./WarenkorbView.jsp");
 		}else if (jetztkaufen.equals("Jetzt Kaufen")) {
 			if(lb.isLoggedIn() == true){
-					kb.bestellen();
+					warenkorb.bestellen(lb.getEmail());
+					
 					response.sendRedirect("./RechnungsView.jsp");
 			}else{
 				response.sendRedirect("./LogInView.jsp");

@@ -28,7 +28,7 @@
  </div>
  </header>
 
-
+<form action ="..\jsp\PaketeAppl.jsp" method="post">
 	<!-- CONTENT -->
 		<main class="main">
 		<br> <br>
@@ -39,7 +39,7 @@
 				<span class="shop-ite-title"><a href="Paket1View.jsp">Mädelsabend</a></span> 
 			<div class="produkt-marke">Pakete</div>
 					<div class="produkt-preis">48,00 Euro</div>
-					 <a href="#" data-name="Paket1" data-price="48.00" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					 <input Type ="submit" name="paket1" value="in den Warenkorb">
 				</div>
 				</div>
 					
@@ -48,7 +48,7 @@
 					<span class="shop-ite-title"><a href="Paket2View.jsp">Männerabend</a></span>
 			<div class="produkt-marke">Pakete</div>
 					<div class="produkt-preis">61,00 Euro</div>
-					 <a href="#" data-name="Paket2" data-price="61.00" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					 <input Type ="submit" name="paket2" value="in den Warenkorb">
 				</div>
 				</div>
 				
@@ -57,7 +57,7 @@
 					<span class="shop-ite-title"><a href="Paket3View.jsp">Netflix &amp Chill</a></span>
 			<div class="produkt-marke">Pakete</div>
 					<div class="produkt-preis">15,00 Euro</div>
-					 <a href="#" data-name="Paket3" data-price="61.00" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					 <input Type ="submit" name="paket3" value="in den Warenkorb">
 				</div>
 				</div>
 				
@@ -66,13 +66,13 @@
 					<span class="shop-ite-title"><a href="Paket4View.jsp">Partypaket</a></span>
 			<div class="produkt-marke">Pakete</div>
 					<div class="produkt-preis">96,00 Euro</div>
-					 <a href="#" data-name="Paket4" data-price="96.00" class="add-to-cart btn btn-primary">in den Warenkorb</a>
+					<input Type ="submit" name="paket4" value="in den Warenkorb">
 				</div>
 				</div>
 		</div>
 		<br><br><br><br><br><br>
 </main>
-
+</form>
 <!-- FOOTER -->
 		<jsp:getProperty property="startFooterAsHtml" name="sb" />
 </body>
