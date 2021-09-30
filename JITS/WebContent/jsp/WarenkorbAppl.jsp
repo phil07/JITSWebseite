@@ -32,6 +32,7 @@
 			response.sendRedirect("./HomeView.jsp");
 		}else if (loeschen.equals("Warenkorb Loeschen")) {  
 			warenkorb.deleteWarenkorb(lb.getEmail());
+			warenkorb.createWarenkorbTable(lb.getEmail());
 			response.sendRedirect("./WarenkorbView.jsp");
 		}else if (jetztkaufen.equals("Jetzt Kaufen")) {
 			if(lb.isLoggedIn() == true){
