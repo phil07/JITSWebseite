@@ -81,7 +81,7 @@ public class AppInstallAccountTable {
 		String sql = "INSERT INTO benutzer " +
 			"(VORNAME, NACHNAME, STADT, STRASSE, NR, ALTER, PASSWORT, EMAIL, TELEFONNUMMER) " +
 			"VALUES " +
-			"('Testzwei', 'Testzwei', 'Y', 'Bensheim', 'EineStrasse', '164a', '15', 'passwort', 'email2@email.com', '0176/12345678')";
+			"('Testzwei', 'Testzwei', 'Bensheim', 'EineStrasse', '164a', '15', 'passwort', 'email2@email.com', '0176/12345678')";
 		System.out.println(sql);
 		Statement myStat = dbConn.createStatement();
 		myStat.executeUpdate(sql);

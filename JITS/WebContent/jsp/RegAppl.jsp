@@ -52,7 +52,7 @@ if(register.equals("Registrieren")){
 		boolean userAngelegt = member.insertMemberIfNotExist();
 		if(userAngelegt){
 			message.setRegistrationSuccessful(email);
-			lb.setEmail(member.getEmail());
+			lb.setEmail(email);
 			warenkorb.createWarenkorbTable(lb.getEmail());
 		}
 		else {

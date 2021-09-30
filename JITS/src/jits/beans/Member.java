@@ -10,7 +10,7 @@ import de.hwg_lu.jdbc.PostgreSQLAccess;
 
 public class Member {
 
-	private String vorname, nachname, stadt, strasse, passwort, email, handynummer, admin, alter, nr;
+	private String vorname, nachname, stadt, strasse, passwort, email, handynummer, alter, nr;
 	private Connection dbConn;
 	
 	public Member() throws NoConnectionException {
@@ -24,7 +24,6 @@ public class Member {
 		this.passwort = "";
 		this.email = "";
 		this.handynummer = "";
-		this.admin = "N";
 		
 	}
 	
@@ -67,20 +66,19 @@ public class Member {
 
 	private void insertMemberNoCheck() throws SQLException {
 	String sql = "INSERT INTO benutzer "+ 
-	"(VORNAME, NACHNAME, ADMIN, STADT, STRASSE, NR, ALTER, PASSWORT, EMAIL, TELEFONNUMMER) "+
-			"VALUES(?,?,?,?,?,?,?,?,?,?)";
+	"(VORNAME, NACHNAME, STADT, STRASSE, NR, ALTER, PASSWORT, EMAIL, TELEFONNUMMER) "+
+			"VALUES(?,?,?,?,?,?,?,?,?)";
 	System.out.println(sql);
 	PreparedStatement myStat = this.dbConn.prepareStatement(sql);
 	myStat.setString(1, this.getVorname());
 	myStat.setString(2, this.getNachname());
-	myStat.setString(3, this.getAdmin());
-	myStat.setString(4, this.getStadt());
-	myStat.setString(5, this.getStrasse());
-	myStat.setString(6, this.getNr());
-	myStat.setString(7, this.getAlter());
-	myStat.setString(8, this.getPasswort());
-	myStat.setString(9, this.getEmail());
-	myStat.setString(10, this.getHandynummer());
+	myStat.setString(3, this.getStadt());
+	myStat.setString(4, this.getStrasse());
+	myStat.setString(5, this.getNr());
+	myStat.setString(6, this.getAlter());
+	myStat.setString(7, this.getPasswort());
+	myStat.setString(8, this.getEmail());
+	myStat.setString(9, this.getHandynummer());
 	myStat.executeUpdate();
 	System.out.println("sql");
 		
@@ -103,15 +101,6 @@ public class Member {
 
 	public String getNr() {
 		return nr;
-	}
-
-	public String getAdmin() {
-		return admin;
-	}
-
-
-	public void setAdmin(String admin) {
-		this.admin = admin;
 	}
 
 

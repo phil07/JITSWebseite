@@ -64,7 +64,7 @@ public void insertArtikel(int anr, String email) throws SQLException {
 			myStat.setDouble(3, this.getPreis(anr));
 			System.out.println("PREIS eingefügt");
 			myStat.executeUpdate();
-			System.out.println("sql");
+			System.out.println(sql);
 	
 }
 
