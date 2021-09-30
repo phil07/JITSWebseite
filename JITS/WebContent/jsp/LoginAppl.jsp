@@ -4,6 +4,7 @@
 <%@page import="jits.beans.Member"%>
 <%@page import="java.sql.SQLException"%>
 <%@page import="jits.beans.MessageBean"%>
+<%@page import="jits.beans.WarenkorbBean"%>
 <!DOCTYPE html>
 <html>
 <head>

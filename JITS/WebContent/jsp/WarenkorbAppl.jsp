@@ -37,6 +37,7 @@
 			if(lb.isLoggedIn() == true){
 					warenkorb.bestellen(lb.getEmail());
 					warenkorb.deleteWarenkorb(lb.getEmail());
+					warenkorb.createWarenkorbTable(lb.getEmail());
 					response.sendRedirect("./RechnungsView.jsp");
 			}else{
 				response.sendRedirect("./LogInView.jsp");

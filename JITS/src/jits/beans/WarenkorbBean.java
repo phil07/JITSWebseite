@@ -75,12 +75,11 @@ public void insertArtikel(int anr, String email) throws SQLException {
 public void deleteWarenkorb(String email) throws SQLException {
 	email = email.replace("@", "AT");
 	email = email.replace(".", "");
-	String sql = "DROP table warenkorb"  +email + ";";
+	String sql = "DROP table warenkorb"  + email + ";";
 	System.out.println(sql);
 	Statement myStat = dbConn.createStatement();
 	myStat.executeUpdate(sql);
 	System.out.println("Delete Warenkorb"+email+" erfolgreich");
-	createWarenkorbTable(email);
 }
 
 
