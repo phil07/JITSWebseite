@@ -22,7 +22,7 @@
 <jsp:getProperty property="headerAsHtml" name="sb" />
 <jsp:useBean id="message" class="jits.beans.MessageBean"
 		scope="session"></jsp:useBean>
-
+<a href="../jsp/WarenkorbView.jsp"><%=message.getWarenkorbMessage()%></a>
 <a href="../jsp/LogInView.jsp"><%=message.getHeaderMessage() %></a>
  </div>
  </div>

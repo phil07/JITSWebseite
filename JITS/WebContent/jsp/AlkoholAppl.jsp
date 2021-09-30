@@ -1,4 +1,4 @@
-<%@page import="org.postgresql.translation.messages_bg"%>
+ <%@page import="org.postgresql.translation.messages_bg"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@page import="jits.beans.Member"%>
@@ -21,7 +21,6 @@
 		session.setAttribute("warenkorb", warenkorb); 
 	}
 	
-
 	String vodka = request.getParameter("vodka");
 	if (vodka == null)
 		vodka = "";

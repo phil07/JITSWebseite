@@ -21,7 +21,6 @@
 		session.setAttribute("warenkorb", warenkorb); 
 	}
 	
-
 	String chips = request.getParameter("chips");
 	if (chips == null)
 		chips = "";

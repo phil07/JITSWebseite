@@ -21,7 +21,6 @@
 		session.setAttribute("warenkorb", warenkorb); 
 	}
 	
-
 	String becks = request.getParameter("becks");
 	if (becks == null)
 		becks = "";

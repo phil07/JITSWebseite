@@ -1,5 +1,4 @@
 <%@page import="java.sql.SQLException"%>
- <%@page import="jits.beans.Warenkorb" %>
  <%@page import="jits.beans.WarenkorbBean" %>
   <%@page import ="jits.beans.MessageBean" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -16,7 +15,6 @@
 		
 		<jsp:useBean id="lb" class="jits.beans.LoginBean" scope="session" />
 <%
-
 	String weitereinkaufen = request.getParameter("weitereinkaufen");
 	if (weitereinkaufen == null) weitereinkaufen = "";
 	
@@ -38,7 +36,7 @@
 		}else if (jetztkaufen.equals("Jetzt Kaufen")) {
 			if(lb.isLoggedIn() == true){
 					warenkorb.bestellen(lb.getEmail());
-					
+					warenkorb.deleteWarenkorb(lb.getEmail());
 					response.sendRedirect("./RechnungsView.jsp");
 			}else{
 				response.sendRedirect("./LogInView.jsp");

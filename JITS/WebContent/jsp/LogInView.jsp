@@ -18,7 +18,6 @@ if(member == null){
 member = new Member();
 session.setAttribute("member", member);
 }
-
 %>
 
 <jsp:useBean id="sb" class="jits.beans.StartseiteBean"
@@ -27,18 +26,19 @@ session.setAttribute("member", member);
 <jsp:useBean id="m" class="jits.beans.Member"
 		scope="session"></jsp:useBean>
 		
-		
 <jsp:useBean id="login" class="jits.beans.LoginBean"
 		scope="session"></jsp:useBean>
-		<jsp:useBean id="msg" class="jits.beans.MessageBean"
+		
+<jsp:useBean id="msg" class="jits.beans.MessageBean"
 		scope="session"></jsp:useBean>
 		
 <!-- HEADER -->
 
 <jsp:getProperty property="headerAsHtml" name="sb" />
+
 <jsp:useBean id="message" class="jits.beans.MessageBean"
 		scope="session"></jsp:useBean>
-
+<a href="../jsp/WarenkorbView.jsp"><%=message.getWarenkorbMessage()%></a>
 <a href="../jsp/LogInView.jsp"><%=message.getHeaderMessage() %></a>
  </div>
  </div>

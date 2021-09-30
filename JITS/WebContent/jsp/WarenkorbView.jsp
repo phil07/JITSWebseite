@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@page import="jits.beans.Warenkorb" %>
      <%@page import="jits.beans.WarenkorbBean" %>
       <%@page import ="jits.beans.MessageBean" %>
 <!DOCTYPE html>
@@ -13,25 +12,25 @@
 </head>
 <jsp:useBean id="sb" class="jits.beans.StartseiteBean"
 		scope="session"></jsp:useBean>
-<jsp:useBean id="kb" class="jits.beans.WarenkorbBean"
+<jsp:useBean id="warenkorb" class="jits.beans.WarenkorbBean"
+		scope="session"></jsp:useBean>
+		<jsp:useBean id="lb" class="jits.beans.LoginBean"
 		scope="session"></jsp:useBean>
 		
 <body>
 <%
-
 MessageBean message = (MessageBean) session.getAttribute("message");
 if (message == null) {
 	message = new MessageBean();
 	session.setAttribute("message", message);
 }
-
-
 %>
 <form action="./WarenkorbAppl.jsp" method="get">
 		
 <!-- HEADER -->
 
 <jsp:getProperty property="headerAsHtml" name="sb" />
+<a href="../jsp/WarenkorbView.jsp"><%=message.getWarenkorbMessage()%></a>
 <a href="../jsp/LogInView.jsp"><%=message.getHeaderMessage() %></a>
  </div>
  </div>
@@ -43,13 +42,13 @@ if (message == null) {
 	<table border="1">
 
 		<tr>
-			<th><h1>Anzahl</h1> </th>
 			<th><h1>Produkt</h1></th>
 			<th><h1>Preis</h1></th>
 			<th><h1>Gesamt</h1></th>
 		</tr>
-		<tr>
-		</tr>
+		
+		<%=warenkorb.getWarenkorbAsHTML(lb.getEmail()) %>
+		
 		
 	</table>
 

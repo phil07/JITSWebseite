@@ -4,6 +4,7 @@ public class MessageBean {
  String infoMessage;
  String actionMessage;
  String HeaderMessage;
+ String WarenkorbMessage;
  
  
  public MessageBean(){
@@ -50,9 +51,11 @@ public class MessageBean {
  
  public void setNotLoggedIn() {
 	 this.HeaderMessage = "Einloggen";
+	 this.WarenkorbMessage = "";
  }
  public void setLoggedIn() {
 	 this.HeaderMessage  = "Eingeloggt";
+	 this.WarenkorbMessage = "Warenkorb";
  }
  
  
@@ -68,6 +71,13 @@ public String getActionMessage() {
 }
 public void setActionMessage(String actionMessage) {
 	this.actionMessage = actionMessage;
+}
+public String getWarenkorbMessage() {
+	return WarenkorbMessage;
+}
+
+public void setWarenkorbMessage(String warenkorbMessage) {
+	this.WarenkorbMessage = warenkorbMessage;
 }
 
 public String getHeaderMessage() {

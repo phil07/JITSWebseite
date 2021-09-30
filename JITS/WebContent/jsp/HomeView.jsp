@@ -21,11 +21,14 @@
 <form action="../jsp/HomeAppl.jsp" method="get">
 
 <!-- HEADER -->
+
 <jsp:getProperty property="headerAsHtml" name="sb" />
+<a href="../jsp/WarenkorbView.jsp"><%=message.getWarenkorbMessage()%></a>
  <a href="../jsp/LogInView.jsp"><%=message.getHeaderMessage() %></a>
  </div>
  </div>
  </header>
+ 
 
 <!-- CONTENT -->
 	

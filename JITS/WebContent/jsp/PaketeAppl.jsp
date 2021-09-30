@@ -21,7 +21,6 @@
 		session.setAttribute("warenkorb", warenkorb); 
 	}
 	
-
 	String paket1 = request.getParameter("paket1");
 	if (paket1 == null)
 		paket1 = "";
@@ -52,7 +51,6 @@
 }else if(paket4.equals("in den Warenkorb")){
 	warenkorb.insertArtikel(40, lb.getEmail());
 	response.sendRedirect("./PaketeView.jsp");
-
 }else{
 	response.sendRedirect("./LogInView.jsp");
 }

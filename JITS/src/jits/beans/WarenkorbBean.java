@@ -14,7 +14,6 @@ public class WarenkorbBean {
  String anr;
  String aname;
  double preis;
- double summe;
  Connection dbConn;
 
  
@@ -25,13 +24,17 @@ public class WarenkorbBean {
  public void bestellen(String email) throws SQLException {
 	 email = email.replace("@", "AT");
 	 email = email.replace(".", "");
-	 String sql = "INSERT INTO BESTELLUNG" + email +" SELECT * FROM warenkorb" + email + ";";
-		System.out.println(sql);
+	 String sql = "CREATE TABLE BESTELLUNG" + email + " (anr int,"
+				+ " aname character varying(255)," + " preis numeric);";
+	 System.out.println(sql);
 		Statement myStat = dbConn.createStatement();
 		myStat.executeUpdate(sql);
 		System.out.println("Tabelle BESTELLUNG<email> wurde angelegt");
-       deleteWarenkorb(email);
-		
+	 String sql2 = "INSERT INTO BESTELLUNG" + email +" SELECT * FROM warenkorb" + email + ";";
+		System.out.println(sql2);
+		Statement myStat2 = dbConn.createStatement();
+		myStat2.executeUpdate(sql2);
+		System.out.println("Tabelle BESTELLUNG<email> wurde beladen");
 	}
  
  
@@ -72,12 +75,27 @@ public void insertArtikel(int anr, String email) throws SQLException {
 public void deleteWarenkorb(String email) throws SQLException {
 	email = email.replace("@", "AT");
 	email = email.replace(".", "");
-	String sql = "DROP TABLE warenkorb"+email + ";";
+	String sql = "DROP table warenkorb"  +email + ";";
 	System.out.println(sql);
 	Statement myStat = dbConn.createStatement();
 	myStat.executeUpdate(sql);
 	System.out.println("Delete Warenkorb"+email+" erfolgreich");
+	createWarenkorbTable(email);
 }
+
+
+public void deleteBestellung(String email) throws SQLException {
+	email = email.replace("@", "AT");
+	email = email.replace(".", "");
+	String sql = "DROP TABLE BESTELLUNG"+email + ";";
+	System.out.println(sql);
+	Statement myStat = dbConn.createStatement();
+	myStat.executeUpdate(sql);
+	System.out.println("Delete Bestellung"+email+" erfolgreich");
+	createWarenkorbTable(email);
+}
+
+
 
 public boolean checkIfWarenkorbExists(String email) throws SQLException {
 	email = email.replace("@", "AT");
@@ -90,14 +108,44 @@ public boolean checkIfWarenkorbExists(String email) throws SQLException {
 	
 }
 
+public String getWarenkorbAsHTML(String email) throws SQLException {
+	String html = "";
+	double preiszusammen = 0;
+	email = email.replace("@", "AT");
+	email = email.replace(".", "");
+	String sql = "SELECT ANAME, PREIS FROM warenkorb" + email + ";";
+	 Statement stmt = dbConn.createStatement();
+  ResultSet rs = stmt.executeQuery(sql);
+	      while (rs.next()) {
+	        String name = rs.getString("ANAME");
+	        double preis = rs.getDouble("PREIS");
+	        preiszusammen = preiszusammen + preis;
+	        html = html + "<tr><th><h1>" + name + "</h1></th>" + "<th><h1>" + preis + "</h1></th><th><h1>"
+	        		+ preiszusammen + "</h1></th></tr>";
+	      }
+		return html;
+	    } 
 
-public double summeBerechnen() {
-	double summe = 0.0;
 
-	summe = this.preis;
+public String getBestellungAsHTML(String email) throws SQLException {
+	String html = "";
+	double preiszusammen = 0;
+	email = email.replace("@", "AT");
+	email = email.replace(".", "");
+	String sql = "SELECT ANAME, PREIS FROM BESTELLUNG" + email + ";";
+	 Statement stmt = dbConn.createStatement();
+  ResultSet rs = stmt.executeQuery(sql);
+	      while (rs.next()) {
+	        String name = rs.getString("ANAME");
+	        double preis = rs.getDouble("PREIS");
+	        preiszusammen = preiszusammen + preis;
+	        html = html + "<tr><th><h1>" + name + "</h1></th>" + "<th><h1>" + preis + "</h1></th><th><h1>"
+	        		+ preiszusammen + "</h1></th></tr>";
+	      }
+		return html;
+	    } 
 
-	return summe;
-}
+
 
 public Connection getDbConn() {
 	return dbConn;

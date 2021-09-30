@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>LoginAppl</title>
 </head>
 <body>
 	<jsp:useBean id="lb" class="jits.beans.LoginBean" scope="session" />
@@ -21,7 +21,6 @@
 		session.setAttribute("member", member);
 	}
 	
-
 	String passwort = request.getParameter("passwort");
 	String email = request.getParameter("email");
 	String login = request.getParameter("login");
@@ -69,9 +68,9 @@
 		lb.setPasswort(passwort);
 		boolean passwortOK = lb.checkEmailPasswort();
 		if (passwortOK) {
+			warenkorb.deleteWarenkorb(lb.getEmail());
 			lb.deleteAccount();
 			lb.setLoggedIn(false);
-			warenkorb.deleteWarenkorb(lb.getEmail());
 			message.setAccountGeloescht(email);
 			message.setNotLoggedIn();
 			response.sendRedirect("../jsp/RegView.jsp");

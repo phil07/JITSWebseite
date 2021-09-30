@@ -21,6 +21,10 @@ session.setAttribute("member", member);
 %>
 <jsp:useBean id="sb" class="jits.beans.StartseiteBean"
 		scope="session"></jsp:useBean>
+		<jsp:useBean id="warenkorb" class="jits.beans.WarenkorbBean"
+		scope="session"></jsp:useBean>
+		<jsp:useBean id="lb" class="jits.beans.LoginBean"
+		scope="session"></jsp:useBean>
 		
 <form action="../jsp/HomeAppl.jsp" method="get">
 <jsp:useBean id="m" class = "jits.beans.Member"></jsp:useBean>
@@ -29,7 +33,7 @@ session.setAttribute("member", member);
 <jsp:getProperty property="headerAsHtml" name="sb" />
 <jsp:useBean id="message" class="jits.beans.MessageBean"
 		scope="session"></jsp:useBean>
-
+<a href="../jsp/WarenkorbView.jsp"><%=message.getWarenkorbMessage()%></a>
 <a href="../jsp/LogInView.jsp"><%=message.getHeaderMessage() %></a>
  </div>
  </div>
@@ -40,6 +44,21 @@ session.setAttribute("member", member);
 	
 <h4>Vielen Dank für Deine Bestellung.
  Bitte halte Bargeld bei der Lieferung bereit!</h4><br>
+ 
+ <h2>Deine Bestellung</h2>
+	<table border="1">
+
+		<tr>
+			<th><h1>Produkt</h1></th>
+			<th><h1>Preis</h1></th>
+			<th><h1>Gesamt</h1></th>
+		</tr>
+		
+		<%=warenkorb.getBestellungAsHTML(lb.getEmail()) %>
+		
+		
+	</table>
+ 
 <a href="../jsp/HomeView.jsp"><input type="button" value="Zurück zur Webseite" /></a>
 
 <!-- FOOTER -->

@@ -9,9 +9,6 @@ public class StartseiteBean {
 	}
 
 	// kopfzeile als Html
-	
-
-	
 	public String getHeaderAsHtml() {
 		String header = "";
 		header += "<header class=\"header\">\n"
@@ -43,37 +40,11 @@ public class StartseiteBean {
 				+ "<div>\n"
 				+"<main class='main'><a href=\"../jsp/HomeView.jsp\"><img class='logo-image' src='../IMG/JITSLOGO.png' alt ='logo'/></a>\n" 
 				+"	</div>\n" 
-				+" <div class=\"header-links\">\n"
-				+" 	<a href=\"../jsp/WarenkorbView.jsp\">Warenkorb</a>\n";		
+				+" <div class=\"header-links\">\n";		
 		return header;
 	}
 	
 	
-	
-	
-	//	header += "<header>\n"
-	//		 += "<aside class=\"seitenliste\">\n"
-	//		 += 	"<button class=\"seitenliste-schließen-button\" onclick=\"schließeMenue()\">X</button>\n"	
-	//		 += 		"<ul>\n"
-	//		 += 			"<li><a href=\"../jsp/HomeView.jsp\">Home</a></li>\n"
-	//		 +=				 "<li><a href=\"../jsp/PreislisteView.jsp\">Preisliste</a></li>\n"
-	//		 += 			"<li><a href=\"../jsp/KontaktView.jsp\">Kontakt</a></li>\n"
-	//		 += 			"<li><a href=\"/jsp/RechtstexteView.jsp\">Rechtstexte</a></li>\n"
-	//		 += 		"</ul>\n"
-	//		 += "</aside>\n"
-	//		 += "<div class=\"container\">\n"
-	//		 += 	"<div class=\"navbar\">\n"
-	//		 += "<nav>\n"
-	//		 += "<ul>\n"
-	//		 += "<li><a href=\"../jsp/LogInView.jsp\">Log In</a></li>\n"
-	//		 += "<li><a href=\"Warenkorb.jsp\">Warenkorb</a></li>\n"
-	//		 += "</ul>\n"
-	//		 += "</nav>\n"
-	//		 += "</div>\n"
-	//		 += "</div>\n";
-	//	
-	//	return header;
-	//}
  public String getLoginAsHtml(String email) {
 			String html= "";
 			
