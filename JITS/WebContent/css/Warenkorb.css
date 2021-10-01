@@ -8,34 +8,63 @@ body{
 	
 }
 
-h1,table,th,td
+table,th,tr
 {
-	
-	color: #fff;
 	justify-content: center; 
 	align-items: center;
+	color: #fff;
+	text-align: center;
+	margin : .5rem;
+	height: 3rem; 
 }
 
-a
-{
+.center{
+
+	padding: 2rem;
+	justify-content: center; 
+	align-items: center;
+	display: flex;
+	font-size: 1.5rem;
+
+}
+.center2{
+	justify-content: center; 
+	align-items: center;
+	display: flex;
+	background: none; 
+	font-size: 3rem;
+	padding: .5rem;
+}
+
+.head{
 	color: #ffffff;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	margin : .5rem;
+	height: 5rem; 
+	text-shadow:
+    0 0 10px #ff80c0,
+    0 0 20px #ff80c0,
+    0 0 30px #ff80c0;	
 }
 
-input {
+.center2 input {
   width: auto;
-  background-color: #000000;
-  border: 2px solid #ff5b5b;
-  color: white;
+  background-color: #dfdfdf;
+  border: 2px solid #000000;
+  color: #000000;
   padding: 2px;
   font-size: 18px;
   cursor: pointer;
   margin: 12px 0;
   justify-content: center; 
   align-items: center;
+  text-align: center;
   
 }
 
 input:hover {
 
-  background-color: #ff5b5b;
+  background-color: #ff8080;
 }

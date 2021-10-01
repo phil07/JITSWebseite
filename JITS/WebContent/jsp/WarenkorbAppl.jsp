@@ -25,9 +25,6 @@
 	if(loeschen == null) loeschen = "";
 		
 		
-		
-		
-		
 		if (weitereinkaufen.equals("Weiter Einkaufen")) {
 			response.sendRedirect("./HomeView.jsp");
 		}else if (loeschen.equals("Warenkorb Loeschen")) {  

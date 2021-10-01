@@ -38,28 +38,31 @@ if (message == null) {
 
 <!-- CONTENT -->
 
-<h2>Dein Warenkorb</h2>
+<div><h2>Dein Warenkorb</h2></div>
+	<div class="center">
 	<table border="1">
 
 		<tr>
-			<th><h1>Produkt</h1></th>
-			<th><h1>Preis</h1></th>
-			<th><h1>Gesamt</h1></th>
+			<th><h1 class="head">Produkt</h1></th>
+			<th><h1 class="head">Preis</h1></th>
+			<th><h1 class="head">Gesamt</h1></th>
 		</tr>
 		
 		<%=warenkorb.getWarenkorbAsHTML(lb.getEmail()) %>
 		
 		
 	</table>
+	</div>
 
-	<br>
+	<div class="center2">
 	<input type="submit" name="jetztkaufen"
 		value="Jetzt Kaufen">
 	<input type="submit" name="weitereinkaufen"
 		value="Weiter Einkaufen">
 		<input type="submit" name="loeschen"
 		value="Warenkorb Loeschen" >
-
+	</div>
+<br><br><br><br><br><br>
 <!-- FOOTER -->
 
 		<jsp:getProperty property="startFooterAsHtml" name="sb" />

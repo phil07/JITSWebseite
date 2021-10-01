@@ -223,7 +223,7 @@ p{
 	align-items: center;
 	flex-grow: 1;
     text-align: end;
-    padding: .25em 0;
+    padding: 1.5em 0;
 	
 }
 a {
@@ -461,4 +461,8 @@ nav ul li {
 
 .closebtn:hover {
   color: black;
+}
+
+input:hover {
+	cursor: pointer;
 }

@@ -21,7 +21,6 @@
 		session.setAttribute("warenkorb", warenkorb); 
 	}
 	
-
 	String cola = request.getParameter("cola");
 	if (cola == null)
 		cola = "";

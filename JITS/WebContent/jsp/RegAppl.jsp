@@ -16,7 +16,6 @@
 <jsp:useBean id="lb" class="jits.beans.LoginBean" scope="session" />
 
 <%
-
 	Member member = (Member) session.getAttribute("member");
 		if(member == null){
 		member = new Member();
